@@ -1,0 +1,30 @@
+{
+  "phase": "2",
+  "environment": {
+    "colab": true
+  },
+  "attention": {
+    "naive_ms": 556.507,
+    "vectorized_ms": 18.938,
+    "speedup": 29.39
+  },
+  "threads": {
+    "1": 2315.243,
+    "2": 2133.882,
+    "4": 2301.966,
+    "8": 2365.036
+  },
+  "devices": {
+    "cpu_ms": 437338.6,
+    "gpu_ms": 17008.1
+  },
+  "training": {
+    "steps": 2000,
+    "final_loss": 1.4971,
+    "param_count": 4935680
+  },
+  "sample": "\nNot do holestide night?\n\nNOMERLA:\nAn news name, sing, I--elike on nor stars.\nCome, Now, tell towers a fether Nethapples,\nHow more whill o' thus meanit? I prosil too tyrratune;\nFor But nevery crile, Cl",
+  "model": {
+    "gcs_url": "https://storage.googleapis.com/clouds-maxence-eurecom-515618-eurecomgpt/model.safetensors"
+  }
+}
