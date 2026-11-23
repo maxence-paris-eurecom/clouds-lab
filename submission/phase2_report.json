@@ -4,26 +4,26 @@
     "colab": true
   },
   "attention": {
-    "naive_ms": 556.507,
-    "vectorized_ms": 18.938,
-    "speedup": 29.39
+    "naive_ms": 422.204,
+    "vectorized_ms": 2.559,
+    "speedup": 164.99
   },
   "threads": {
-    "1": 2315.243,
-    "2": 2133.882,
-    "4": 2301.966,
-    "8": 2365.036
+    "1": 2164.544,
+    "2": 2114.237,
+    "4": 2805.643,
+    "8": 2189.57
   },
   "devices": {
-    "cpu_ms": 437338.6,
-    "gpu_ms": 17008.1
+    "cpu_ms": 428293.4,
+    "gpu_ms": 13824.0
   },
   "training": {
     "steps": 2000,
-    "final_loss": 1.4971,
+    "final_loss": 1.4801,
     "param_count": 4935680
   },
-  "sample": "\nNot do holestide night?\n\nNOMERLA:\nAn news name, sing, I--elike on nor stars.\nCome, Now, tell towers a fether Nethapples,\nHow more whill o' thus meanit? I prosil too tyrratune;\nFor But nevery crile, Cl",
+  "sample": "\nSheep one: the the even your seal'ther'd.\n\nWords\ufffdREN SI:\nWhat, sir,.\n\nHENRY BOLINGBROKE:\nNo, her, knell, near, lords.\n\nPETRUCHIO:\nGone, no!\n\nMENENIUS:\nOffenctatien,\nA go may is this worth not thoughts",
   "model": {
     "gcs_url": "https://storage.googleapis.com/clouds-maxence-eurecom-515618-eurecomgpt/model.safetensors"
   }
