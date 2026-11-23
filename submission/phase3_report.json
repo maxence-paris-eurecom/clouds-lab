@@ -1,7 +1,7 @@
 {
   "phase": "3",
   "environment": {
-    "colab": false
+    "colab": true
   },
   "corpus": {
     "num_docs": 60
@@ -114,7 +114,7 @@
       }
     ],
     "cloud_elapsed_s": 26.9,
-    "local_elapsed_s": 0.003,
+    "local_elapsed_s": 0.01,
     "vocab_size": 2221,
     "top_terms": [
       [
@@ -164,7 +164,7 @@
   "tfidf": {
     "parquet_gcs_url": "https://storage.googleapis.com/clouds-maxence-eurecom-515618-eurecomgpt/tfidf.parquet",
     "num_rows": 5975,
-    "spark_elapsed_s": 2.1
+    "spark_elapsed_s": 9.7
   },
   "bigquery": {
     "table": "clouds-maxence-eurecom-515618.eurecomgpt.tfidf",
@@ -190,13 +190,13 @@
         14.3341
       ],
       [
-        "letter",
-        37,
+        "condition",
+        31,
         13.6048
       ],
       [
-        "condition",
-        31,
+        "letter",
+        37,
         13.6048
       ],
       [
@@ -210,13 +210,13 @@
         12.283
       ],
       [
-        "enough",
-        35,
+        "officer",
+        44,
         11.9829
       ],
       [
-        "officer",
-        44,
+        "enough",
+        35,
         11.9829
       ]
     ]

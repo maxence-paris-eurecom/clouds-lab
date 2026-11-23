@@ -25,8 +25,8 @@ Numbers only (e.g. `12`, `20.3`, `0.041`).
 | Map tasks in the cloud job (`mapreduce.num_splits`) | <!--answer:num_map_tasks-->12<!--/answer--> |
 | Reduce tasks in the cloud job (`mapreduce.num_reducers`) | <!--answer:num_reduce_tasks-->4<!--/answer--> |
 | Cloud MapReduce wall time, seconds (`mapreduce.cloud_elapsed_s`) | <!--answer:cloud_elapsed_s-->26.9<!--/answer--> |
-| Local single-process wall time, seconds (`mapreduce.local_elapsed_s`) | <!--answer:local_elapsed_s-->0.003<!--/answer--> |
-| Spark wall time for the `collect`, seconds (`tfidf.spark_elapsed_s`) | <!--answer:spark_elapsed_s-->2.1<!--/answer--> |
+| Local single-process wall time, seconds (`mapreduce.local_elapsed_s`) | <!--answer:local_elapsed_s-->0.01<!--/answer--> |
+| Spark wall time for the `collect`, seconds (`tfidf.spark_elapsed_s`) | <!--answer:spark_elapsed_s-->9.7<!--/answer--> |
 | Number of **stages** in the Spark job (read off notebook 2b / 3a) | <!--answer:num_stages-->4<!--/answer--> |
 | Task **retries** you counted in your `--chaos` run (0 if none happened) | <!--answer:chaos_retries-->3<!--/answer--> |
 
@@ -38,7 +38,7 @@ Spark number — a heavier job, on one machine — tells you about where the clo
 (~80 words)
 
 <!--answer:timing_explanation-->
-Ranking, fastest first: local single process (0.003 s), Spark collect (2.1 s), cloud MapReduce (26.9 s). The like-for-like pair is local against cloud, the same word count: the local run only does the computation, while the cloud job pays for 16 function invocations, container cold starts, Cloud Storage reads and writes for every shuffle file, and Workflows scheduling. Spark did a heavier job (two reduceByKeys and a join) on one machine in 2.1 s, so the cloud job's 26.9 s is almost all overhead, not computation: on 60 documents the cluster is slower.
+Ranking, fastest first: local single process (0.01 s), Spark collect (9.7 s), cloud MapReduce (26.9 s). The like-for-like pair is local against cloud, the same word count: the local run only does the computation, while the cloud job pays for 16 function invocations, container cold starts, Cloud Storage reads and writes for every shuffle file, and Workflows scheduling. Spark did a heavier job (two reduceByKeys and a join) on one Colab machine in 9.7 s, mostly job start-up and shuffles, so the cloud job's 26.9 s is largely overhead, not computation: on 60 documents the cluster is slower.
 <!--/answer-->
 
 **What the counts tell you.** From your stage count: how many shuffles did the Spark job have,
