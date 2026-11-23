@@ -1,0 +1,24 @@
+{
+  "phase": "0",
+  "environment": {
+    "cloud_shell": false
+  },
+  "python": {
+    "version": "3.12.16",
+    "ok": true
+  },
+  "gcloud": {
+    "account": "maxence.eurecom@gmail.com",
+    "project": "clouds-maxence-eurecom-515618",
+    "error": null
+  },
+  "docker": {
+    "version": "Docker version 29.10.0, build fdd4b8e",
+    "present": true
+  },
+  "git": {
+    "remote": "https://github.com/maxence-paris-eurecom/clouds-lab.git",
+    "is_github": true,
+    "slug": "maxence-paris-eurecom/clouds-lab"
+  }
+}
